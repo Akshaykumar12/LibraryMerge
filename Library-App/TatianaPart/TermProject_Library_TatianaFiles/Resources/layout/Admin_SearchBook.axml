@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<!--Header: links and small logo-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+    <!--Home link-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left">
+            <TextView
+                android:id="@+id/linkHome"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#031c3d"
+                android:textSize="15dp"
+                android:text="Home"
+                android:paddingLeft="10dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    <!--End Home link-->
+    <!--Logo-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    <!--End Logo-->
+    <!--Logout link-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <TextView
+                android:id="@+id/linkLogout"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="#031c3d"
+                android:layout_gravity="right"
+                android:textSize="15dp"
+                android:text="Logout"
+                android:paddingRight="10dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    <!--End Logout link-->
+    </LinearLayout>
+<!--End Header-->
+<!--Form-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="#031c3d"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Search Book" />
+    <SearchView
+        android:id="@+id/search"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:background="@drawable/SearchViewRoundedCorners"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp" />
+    <ListView
+        android:id="@+id/myList"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@drawable/SearchViewRoundedCorners"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="15dp" />
+<!--End Form-->
+</LinearLayout>
