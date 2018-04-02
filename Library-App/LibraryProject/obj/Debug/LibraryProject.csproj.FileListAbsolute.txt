@@ -1,0 +1,126 @@
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\LibraryProject.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\LibraryProject.pdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\LibraryProject.LibraryProject.apk
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\LibraryProject.LibraryProject-Signed.apk
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.DataBinding.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.Sync.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Remotion.Linq.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.pdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.DataBinding.pdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.Sync.pdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Realm.Sync.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\Remotion.Linq.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\LibraryProject.dll
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\LibraryProject.pdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\android\bin\LibraryProject.LibraryProject.apk
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\res\layout\borrowedbook.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\res\layout\borrowedbooklistview.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\res\layout\main.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\res\values\strings.xml
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\R.cs.flag
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\uploadflags.txt
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\bin\Debug\LibraryProject.dll.mdb
+C:\Users\Anh\Documents\Visual Studio 2015\Projects\Androids\LibraryProject\LibraryProject\obj\Debug\android\assets\LibraryProject.dll.mdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\LibraryProject.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\LibraryProject.pdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\LibraryProject.LibraryProject.apk
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\LibraryProject.LibraryProject-Signed.apk
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.DataBinding.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.Sync.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Remotion.Linq.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.pdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.DataBinding.pdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.Sync.pdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Realm.Sync.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\Remotion.Linq.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\LibraryProject.dll
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\LibraryProject.pdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\android\bin\LibraryProject.LibraryProject.apk
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbook.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbooklistview.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\res\layout\main.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\res\values\strings.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\R.cs.flag
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\uploadflags.txt
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbookdetail.xml
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\LibraryProject.csprojResolveAssemblyReference.cache
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\bin\Debug\LibraryProject.dll.mdb
+C:\Users\Anh\Documents\GitHub\Library-App\LibraryProject\obj\Debug\android\assets\LibraryProject.dll.mdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.pdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.LibraryProject.apk
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.LibraryProject-Signed.apk
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.DataBinding.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.Sync.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Remotion.Linq.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.pdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.DataBinding.pdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.Sync.pdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Realm.Sync.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\Remotion.Linq.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\LibraryProject.csprojResolveAssemblyReference.cache
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\LibraryProject.csproj.CoreCompileInputs.cache
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\LibraryProject.dll
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\LibraryProject.pdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\android\bin\LibraryProject.LibraryProject.apk
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbook.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbooklistview.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbookdetail.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\main.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\values\strings.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\R.cs.flag
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\uploadflags.txt
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\bookdetailayout.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\home.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\res\layout\searchbookfragment.xml
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.dll.mdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\obj\Debug\android\assets\LibraryProject.dll.mdb
+C:\Users\Surface\source\repos\Library-App\LibraryProject\bin\Debug\LibraryProject.dll
+bin\Debug\Microsoft.CSharp.pdb
+bin\Debug\Mono.Android.pdb
+bin\Debug\mscorlib.pdb
+bin\Debug\System.Core.pdb
+bin\Debug\System.pdb
+bin\Debug\System.Xml.pdb
+bin\Debug\System.Net.Http.pdb
+bin\Debug\System.Runtime.Serialization.pdb
+bin\Debug\System.ServiceModel.Internals.pdb
+bin\Debug\System.Numerics.pdb
+bin\Debug\System.Xml.Linq.pdb
+bin\Debug\Mono.Security.pdb
+bin\Debug\System.ComponentModel.Composition.pdb
+obj\Debug\linksrc\LibraryProject.dll.mdb
+obj\Debug\linksrc\Microsoft.CSharp.pdb
+obj\Debug\linksrc\Mono.Android.pdb
+obj\Debug\linksrc\mscorlib.pdb
+obj\Debug\linksrc\Realm.DataBinding.pdb
+obj\Debug\linksrc\Realm.pdb
+obj\Debug\linksrc\Realm.Sync.pdb
+obj\Debug\linksrc\System.Core.pdb
+obj\Debug\linksrc\System.pdb
+obj\Debug\linksrc\System.Xml.pdb
+obj\Debug\linksrc\System.Net.Http.pdb
+obj\Debug\linksrc\System.Runtime.Serialization.pdb
+obj\Debug\linksrc\System.ServiceModel.Internals.pdb
+obj\Debug\linksrc\System.Numerics.pdb
+obj\Debug\linksrc\System.Xml.Linq.pdb
+obj\Debug\linksrc\Mono.Security.pdb
+obj\Debug\linksrc\System.ComponentModel.Composition.pdb

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="Detail"
+            android:padding="3dip"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp" />
+    </TableRow>
+    <TableRow>
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_column="1"
+            android:text="Book No"
+            android:padding="3dip"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Value"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip"
+            android:id="@+id/txtBorrowedBookNo"
+            android:layout_marginRight="40dp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_column="1"
+            android:text="Name"
+            android:padding="3dip"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Value"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip"
+            android:id="@+id/txtBorrowedName"
+            android:layout_marginRight="40dp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_column="1"
+            android:text="Author"
+            android:padding="3dip"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Value"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip"
+            android:id="@+id/txtBorrowedAuthor"
+            android:layout_marginRight="40dp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_column="1"
+            android:text="Type"
+            android:padding="3dip"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Value"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip"
+            android:id="@+id/txtBorrowedType"
+            android:layout_marginRight="40dp" />
+    </TableRow>
+    <TableRow
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_column="1"
+            android:text="Return Date"
+            android:padding="3dip"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:text="Value"
+            android:gravity="right"
+            android:textSize="20dp"
+            android:padding="3dip"
+            android:id="@+id/txtBorrowedReturnDate"
+            android:layout_marginRight="40dp" />
+    </TableRow>
+</TableLayout>
