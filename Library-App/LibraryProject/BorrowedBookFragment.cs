@@ -18,10 +18,10 @@ namespace LibraryProject
         private List<String> songs;
         private ListView lv1;
         private ArrayAdapter myAdapter;
-        private Context main1;
+        private Activity main1;
       
 
-        public BorrowedBookFragment(Context main, List<String> songs)
+        public BorrowedBookFragment(Activity main, List<String> songs)
         {
             this.songs = songs;
             this.main1 = main;
@@ -39,15 +39,13 @@ namespace LibraryProject
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
             //return base.OnCreateView(inflater, container, savedInstanceState);
-            var view = inflater.Inflate(Resource.Layout.SearchBookFragment, container, false);
+            var view = inflater.Inflate(Resource.Layout.BorrowedBook, container, false);
 
-            lv1 = view.FindViewById<ListView>(Resource.Id.lv1);
+            lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
 
-            myAdapter = new ArrayAdapter(main1, Android.Resource.Layout.SimpleListItem1, songs.ToArray());
-            lv1.Adapter = myAdapter;
-
+            var borroredBookAdapter = new BorrowedBookListViewAdapter(main1, songs.ToArray());
+            lv1.Adapter = borroredBookAdapter;
             return view;
-
         }
     }
 }

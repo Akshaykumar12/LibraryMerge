@@ -44,6 +44,7 @@ namespace LibraryProject
 
            // return base.OnCreateView(inflater, container, savedInstanceState);
             var view = inflater.Inflate(Resource.Layout.BorrowedBook, container, false);
+            view.FindViewById<TextView>(Resource.Id.textView2).Text = "Search Books";
 
             lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
             // myAdapter = new ArrayAdapter(main1, Android.Resource.Layout.SimpleListItem1, data_books.Select(b=>b.BookName).ToArray());

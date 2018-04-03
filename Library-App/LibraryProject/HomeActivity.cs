@@ -17,9 +17,6 @@ namespace LibraryProject
     [Activity(Label = "HomeActivity")]
     public class HomeActivity : Activity
     {
-        List<string> movies = new List<string> { "moon", "mars", "sun" };
-        List<string> songs = new List<string> { "twinlke", "Little", "star" };
-        List<TBBook> data_books = new List<TBBook>();
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -30,23 +27,36 @@ namespace LibraryProject
 
             //enable navigation mode to support tab layout
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
-            IQueryable<TBBook> books = BookMethod.GetAlls();
-
-            foreach (var book in books)
+            IQueryable<TBBook> books1 = BookMethod.GetAlls();
+            List<TBBook> data_books1 = new List<TBBook>();
+            foreach (var book in books1)
             {
-
-                data_books.Add(book);
-
+                data_books1.Add(book);
             }
+
+            /* borrowed books */
+            IQueryable<TBBorrowing> borrowings = BorrowingMethod.GetAlls();
+            IQueryable<TBBook> books = BookMethod.GetAlls();
+            List<string> data_books = new List<string>();
+            foreach (var borrowing in borrowings)
+            {
+                foreach (var book in books)
+                {
+                    if (borrowing.BookId == book.BookId)
+                    {
+                        data_books.Add(book.BookName);
+                        break;
+                    }
+                }
+            }
+
             //adding audio tab
-            AddTab("Seach Book", new SearchBookFragment(this, data_books,this));
+            AddTab("Seach Book", new SearchBookFragment(this, data_books1, this));
 
             //adding video tab 
-            AddTab("Borrowed Book", new BorrowedBookFragment(this, songs));
+            AddTab("Borrowed Book", new BorrowedBookFragment(this, data_books));
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.home);
-
-           
         }
 
         void AddTab(string tabText, Fragment fragment)
