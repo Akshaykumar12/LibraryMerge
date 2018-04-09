@@ -9,12 +9,14 @@
     <activity android:label="BorrowedBookActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.BorrowedBookActivity" />
     <activity android:label="BorrowedBookDetailActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.BorrowedBookDetailActivity" />
     <activity android:label="HomeActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.HomeActivity" />
+    <activity android:label="LoginActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.LoginActivity" />
     <activity android:label="LibraryProject" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
+    <activity android:label="RegisterAcitivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.RegisterAcitivity" />
     <activity android:label="SearchBookActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.SearchBookActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="LibraryProject.LibraryProject.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

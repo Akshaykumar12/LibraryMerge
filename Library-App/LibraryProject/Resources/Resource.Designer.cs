@@ -50,17 +50,68 @@ namespace LibraryProject
 			// aapt resource value: 0x7f040011
 			public const int btnBorrowedBook = 2130968593;
 			
+			// aapt resource value: 0x7f040019
+			public const int btnLogin = 2130968601;
+			
+			// aapt resource value: 0x7f040025
+			public const int btnRegister = 2130968613;
+			
+			// aapt resource value: 0x7f04001d
+			public const int etEmail = 2130968605;
+			
+			// aapt resource value: 0x7f040017
+			public const int etLoginPassword = 2130968599;
+			
+			// aapt resource value: 0x7f040015
+			public const int etLoginStudentID = 2130968597;
+			
+			// aapt resource value: 0x7f04001c
+			public const int etName = 2130968604;
+			
+			// aapt resource value: 0x7f04001f
+			public const int etPassword = 2130968607;
+			
+			// aapt resource value: 0x7f040023
+			public const int etPhone = 2130968611;
+			
+			// aapt resource value: 0x7f04001b
+			public const int etStudentID = 2130968603;
+			
+			// aapt resource value: 0x7f040021
+			public const int etconfirm_pwd = 2130968609;
+			
 			// aapt resource value: 0x7f040012
 			public const int fragmentContainer = 2130968594;
 			
 			// aapt resource value: 0x7f04000e
 			public const int linearLayout1 = 2130968590;
 			
+			// aapt resource value: 0x7f040014
+			public const int linearLayout2 = 2130968596;
+			
+			// aapt resource value: 0x7f040016
+			public const int linearLayout3 = 2130968598;
+			
+			// aapt resource value: 0x7f040018
+			public const int linearLayout4 = 2130968600;
+			
+			// aapt resource value: 0x7f04001e
+			public const int linearLayout5 = 2130968606;
+			
+			// aapt resource value: 0x7f040020
+			public const int linearLayout6 = 2130968608;
+			
+			// aapt resource value: 0x7f040022
+			public const int linearLayout7 = 2130968610;
+			
+			// aapt resource value: 0x7f040024
+			public const int linearLayout8 = 2130968612;
+			
 			// aapt resource value: 0x7f040008
 			public const int listViewBorrowedBook = 2130968584;
 			
-			// aapt resource value: 0x7f040013
-			public const int lv1 = 2130968595;
+			// aapt resource value: 0x7f040026
+			public const int lv1 = 2130968614;
 			
 			// aapt resource value: 0x7f04000f
 			public const int relativeLayout1 = 2130968591;
@@ -101,8 +152,14 @@ namespace LibraryProject
 			// aapt resource value: 0x7f04000c
 			public const int txtBorrowedType = 2130968588;
 			
+			// aapt resource value: 0x7f040013
+			public const int txtLogo = 2130968595;
+			
 			// aapt resource value: 0x7f040003
 			public const int txtQuantity = 2130968579;
+			
+			// aapt resource value: 0x7f04001a
+			public const int txtRegister = 2130968602;
 			
 			static Id()
 			{
@@ -133,10 +190,16 @@ namespace LibraryProject
 			public const int home = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int Main = 2130837509;
+			public const int login = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int SearchBookFragment = 2130837510;
+			public const int Main = 2130837510;
+			
+			// aapt resource value: 0x7f020007
+			public const int Register = 2130837511;
+			
+			// aapt resource value: 0x7f020008
+			public const int SearchBookFragment = 2130837512;
 			
 			static Layout()
 			{

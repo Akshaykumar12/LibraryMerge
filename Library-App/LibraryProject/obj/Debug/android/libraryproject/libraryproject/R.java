@@ -13,10 +13,27 @@ public final class R {
     public static final class id {
         public static final int btnBorrow=0x7f040005;
         public static final int btnBorrowedBook=0x7f040011;
+        public static final int btnLogin=0x7f040019;
+        public static final int btnRegister=0x7f040025;
+        public static final int etEmail=0x7f04001d;
+        public static final int etLoginPassword=0x7f040017;
+        public static final int etLoginStudentID=0x7f040015;
+        public static final int etName=0x7f04001c;
+        public static final int etPassword=0x7f04001f;
+        public static final int etPhone=0x7f040023;
+        public static final int etStudentID=0x7f04001b;
+        public static final int etconfirm_pwd=0x7f040021;
         public static final int fragmentContainer=0x7f040012;
         public static final int linearLayout1=0x7f04000e;
+        public static final int linearLayout2=0x7f040014;
+        public static final int linearLayout3=0x7f040016;
+        public static final int linearLayout4=0x7f040018;
+        public static final int linearLayout5=0x7f04001e;
+        public static final int linearLayout6=0x7f040020;
+        public static final int linearLayout7=0x7f040022;
+        public static final int linearLayout8=0x7f040024;
         public static final int listViewBorrowedBook=0x7f040008;
-        public static final int lv1=0x7f040013;
+        public static final int lv1=0x7f040026;
         public static final int relativeLayout1=0x7f04000f;
         public static final int searchBorrowedBook=0x7f040007;
         public static final int textView2=0x7f040006;
@@ -30,7 +47,9 @@ public final class R {
         public static final int txtBorrowedName=0x7f04000a;
         public static final int txtBorrowedReturnDate=0x7f04000d;
         public static final int txtBorrowedType=0x7f04000c;
+        public static final int txtLogo=0x7f040013;
         public static final int txtQuantity=0x7f040003;
+        public static final int txtRegister=0x7f04001a;
     }
     public static final class layout {
         public static final int bookdetailayout=0x7f020000;
@@ -38,8 +57,10 @@ public final class R {
         public static final int borrowedbookdetail=0x7f020002;
         public static final int borrowedbooklistview=0x7f020003;
         public static final int home=0x7f020004;
-        public static final int main=0x7f020005;
-        public static final int searchbookfragment=0x7f020006;
+        public static final int login=0x7f020005;
+        public static final int main=0x7f020006;
+        public static final int register=0x7f020007;
+        public static final int searchbookfragment=0x7f020008;
     }
     public static final class string {
         public static final int app_name=0x7f030000;

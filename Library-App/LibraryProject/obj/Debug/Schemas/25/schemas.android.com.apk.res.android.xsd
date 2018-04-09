@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>4/2/2018 9:40:37 PM</xs:documentation>
+    <xs:documentation>2018-04-09 4:10:34 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16888,8 +16888,23 @@
             <xs:enumeration value="@+id/checkedTextView1" />
             <xs:enumeration value="@id/btnBorrow" />
             <xs:enumeration value="@id/btnBorrowedBook" />
+            <xs:enumeration value="@id/btnLogin" />
+            <xs:enumeration value="@id/btnRegister" />
+            <xs:enumeration value="@id/etconfirm_pwd" />
+            <xs:enumeration value="@id/etEmail" />
+            <xs:enumeration value="@id/etLoginPassword" />
+            <xs:enumeration value="@id/etLoginStudentID" />
+            <xs:enumeration value="@id/etName" />
+            <xs:enumeration value="@id/etPhone" />
             <xs:enumeration value="@id/fragmentContainer" />
             <xs:enumeration value="@id/linearLayout1" />
+            <xs:enumeration value="@id/linearLayout2" />
+            <xs:enumeration value="@id/linearLayout3" />
+            <xs:enumeration value="@id/linearLayout4" />
+            <xs:enumeration value="@id/linearLayout5" />
+            <xs:enumeration value="@id/linearLayout6" />
+            <xs:enumeration value="@id/linearLayout7" />
+            <xs:enumeration value="@id/linearLayout8" />
             <xs:enumeration value="@id/listViewBorrowedBook" />
             <xs:enumeration value="@id/lv1" />
             <xs:enumeration value="@id/relativeLayout1" />
@@ -16905,7 +16920,9 @@
             <xs:enumeration value="@id/txtBorrowedName" />
             <xs:enumeration value="@id/txtBorrowedReturnDate" />
             <xs:enumeration value="@id/txtBorrowedType" />
+            <xs:enumeration value="@id/txtLogo" />
             <xs:enumeration value="@id/txtQuantity" />
+            <xs:enumeration value="@id/txtRegister" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
