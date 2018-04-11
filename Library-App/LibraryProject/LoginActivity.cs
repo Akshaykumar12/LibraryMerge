@@ -34,14 +34,24 @@ namespace LibraryProject
                 string id = StudetID.Text;
                 string pwd = Password.Text;
                 TBUser user = DataMethods.UserMethod.GetUser(id, pwd);
-
+                
                 if (user !=null)
                 {
-                    GlobalVariable temp = GlobalVariable.GetInstance();
-                    temp.UserName = user.FirstName;
-                    Intent intent = new Intent(this, typeof(HomeActivity));
-                    this.StartActivity(intent);
+                    if (user.Admin == true)
+                    {
+                        Intent intent = new Intent(this, typeof(AdminHomeActivity));
+                        this.StartActivity(intent);
+
+                    }
+                    else
+                    {
+                        GlobalVariable temp = GlobalVariable.GetInstance();
+                        temp.UserName = user.FirstName;
+                        Intent intent = new Intent(this, typeof(HomeActivity));
+                        this.StartActivity(intent);
+                    }
                 }
+
             };
 
 

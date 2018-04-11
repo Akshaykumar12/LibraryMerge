@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2018-04-09 4:10:34 AM</xs:documentation>
+    <xs:documentation>2018-04-11 2:26:46 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -16886,17 +16886,25 @@
           <xs:restriction base="xs:string">
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkedTextView1" />
+            <xs:enumeration value="@id/author" />
+            <xs:enumeration value="@id/bookName" />
+            <xs:enumeration value="@id/btnAddBook" />
             <xs:enumeration value="@id/btnBorrow" />
             <xs:enumeration value="@id/btnBorrowedBook" />
+            <xs:enumeration value="@id/btnDelete" />
             <xs:enumeration value="@id/btnLogin" />
             <xs:enumeration value="@id/btnRegister" />
+            <xs:enumeration value="@id/categorySpinner" />
             <xs:enumeration value="@id/etconfirm_pwd" />
             <xs:enumeration value="@id/etEmail" />
             <xs:enumeration value="@id/etLoginPassword" />
             <xs:enumeration value="@id/etLoginStudentID" />
             <xs:enumeration value="@id/etName" />
+            <xs:enumeration value="@id/etPassword" />
             <xs:enumeration value="@id/etPhone" />
+            <xs:enumeration value="@id/etStudentID" />
             <xs:enumeration value="@id/fragmentContainer" />
+            <xs:enumeration value="@id/isbn" />
             <xs:enumeration value="@id/linearLayout1" />
             <xs:enumeration value="@id/linearLayout2" />
             <xs:enumeration value="@id/linearLayout3" />
@@ -16907,9 +16915,13 @@
             <xs:enumeration value="@id/linearLayout8" />
             <xs:enumeration value="@id/listViewBorrowedBook" />
             <xs:enumeration value="@id/lv1" />
+            <xs:enumeration value="@id/myList" />
+            <xs:enumeration value="@id/numberCopies" />
             <xs:enumeration value="@id/relativeLayout1" />
+            <xs:enumeration value="@id/search" />
             <xs:enumeration value="@id/searchBorrowedBook" />
             <xs:enumeration value="@id/textView2" />
+            <xs:enumeration value="@id/title" />
             <xs:enumeration value="@id/txtAuthor" />
             <xs:enumeration value="@id/txtBookName" />
             <xs:enumeration value="@id/txtBookNo" />

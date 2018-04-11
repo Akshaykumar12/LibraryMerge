@@ -51,7 +51,7 @@ namespace LibraryProject
             }
 
             //adding audio tab
-            AddTab("Seach Book", new SearchBookFragment(this, data_books1, this));
+            AddTab("Seach Book", new SearchBookFragment(this, data_books1));
 
             //adding video tab 
             AddTab("Borrowed Book", new BorrowedBookFragment(this, data_books));

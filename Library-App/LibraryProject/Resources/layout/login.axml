@@ -29,7 +29,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Student ID"
+            android:hint="Email"
             android:id="@+id/etLoginStudentID" />
     </LinearLayout>
     <LinearLayout

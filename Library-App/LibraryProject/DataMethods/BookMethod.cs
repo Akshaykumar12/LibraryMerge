@@ -57,6 +57,17 @@ namespace LibraryProject.DataMethods
             realm.Dispose();
         }
 
+        public static void DeleteBook(TBBook book)
+        {
+            Realm realm = Realm.GetInstance();
+            var books = realm.All<TBBook>();
+            using (var transaction = realm.BeginWrite())
+            {
+                realm.Remove(book);
+                transaction.Commit();
+            }
+            realm.Dispose();
 
+        }
     }
 }

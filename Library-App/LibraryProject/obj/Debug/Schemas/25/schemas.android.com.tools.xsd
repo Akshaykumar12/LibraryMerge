@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>2018-04-09 4:10:34 AM</xs:documentation>
+    <xs:documentation>2018-04-11 2:26:46 AM</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -12,6 +12,9 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/admin_addbook" />
+            <xs:enumeration value="@layout/admin_bookdetail" />
+            <xs:enumeration value="@layout/admin_booksearch" />
             <xs:enumeration value="@layout/bookdetailayout" />
             <xs:enumeration value="@layout/borrowedbook" />
             <xs:enumeration value="@layout/borrowedbookdetail" />
@@ -69,6 +72,9 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/admin_addbook" />
+            <xs:enumeration value="@layout/admin_bookdetail" />
+            <xs:enumeration value="@layout/admin_booksearch" />
             <xs:enumeration value="@layout/bookdetailayout" />
             <xs:enumeration value="@layout/borrowedbook" />
             <xs:enumeration value="@layout/borrowedbookdetail" />
@@ -126,6 +132,9 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/admin_addbook" />
+            <xs:enumeration value="@layout/admin_bookdetail" />
+            <xs:enumeration value="@layout/admin_booksearch" />
             <xs:enumeration value="@layout/bookdetailayout" />
             <xs:enumeration value="@layout/borrowedbook" />
             <xs:enumeration value="@layout/borrowedbookdetail" />
@@ -183,6 +192,9 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@layout/admin_addbook" />
+            <xs:enumeration value="@layout/admin_bookdetail" />
+            <xs:enumeration value="@layout/admin_booksearch" />
             <xs:enumeration value="@layout/bookdetailayout" />
             <xs:enumeration value="@layout/borrowedbook" />
             <xs:enumeration value="@layout/borrowedbookdetail" />

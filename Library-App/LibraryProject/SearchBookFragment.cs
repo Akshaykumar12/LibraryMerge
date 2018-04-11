@@ -16,17 +16,15 @@ namespace LibraryProject
 {
     public class SearchBookFragment : Fragment
     {
-        private List<String> movies;
         private ListView lv1;
         private ArrayAdapter myAdapter;
-        private Context main1;
-        private Activity main2;
+        private Activity source;
         private List<TBBook> data_books;
-        public SearchBookFragment(Context main, List<TBBook> books,Activity home)
+        public SearchBookFragment(Activity home,List<TBBook> books)
         {
-            this.main1 = main;
+            this.source = home;
             this.data_books = books;
-            this.main2 = home;
+            
         }
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -50,8 +48,8 @@ namespace LibraryProject
             lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
             // myAdapter = new ArrayAdapter(main1, Android.Resource.Layout.SimpleListItem1, data_books.Select(b=>b.BookName).ToArray());
             //lv1.Adapter = myAdapter;
-            var searchBookAdapter = new SearchBookAdapter(main2, data_books.ToArray());
-            lv1.Adapter = searchBookAdapter;
+            var adminSearchBookAdapter = new Admin_SearchBookAdapter(source, data_books.ToArray());
+            lv1.Adapter = adminSearchBookAdapter;
             return view;
 
         }

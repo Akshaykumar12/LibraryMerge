@@ -81,6 +81,12 @@
     <Reference Include="Mono.Android" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBookFragment.cs" />
+    <Compile Include="AdminBookDetailActivity.cs" />
+    <Compile Include="AdminHomeActivity.cs" />
+    <Compile Include="Admin_AddBookActivity.cs" />
+    <Compile Include="Admin_BookSearchActivity.cs" />
+    <Compile Include="Admin_SearchBookAdapter.cs" />
     <Compile Include="BookDetailActivity.cs" />
     <Compile Include="BorrowedBookActivity.cs" />
     <Compile Include="BorrowedBookDetailActivity.cs" />
@@ -111,6 +117,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\BookDetailayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Admin_AddBook.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Admin_BookDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <None Include="GettingStarted.Xamarin" />

@@ -15,15 +15,15 @@ namespace LibraryProject
 {
     public class BorrowedBookFragment : Fragment
     {
-        private List<String> songs;
+        private List<String> borrowdbooks;
         private ListView lv1;
         private ArrayAdapter myAdapter;
         private Activity main1;
       
 
-        public BorrowedBookFragment(Activity main, List<String> songs)
+        public BorrowedBookFragment(Activity main, List<String> borrowdbooks)
         {
-            this.songs = songs;
+            this.borrowdbooks = borrowdbooks;
             this.main1 = main;
         }
         public override void OnCreate(Bundle savedInstanceState)
@@ -43,7 +43,7 @@ namespace LibraryProject
 
             lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
 
-            var borroredBookAdapter = new BorrowedBookListViewAdapter(main1, songs.ToArray());
+            var borroredBookAdapter = new BorrowedBookListViewAdapter(main1, borrowdbooks.ToArray());
             lv1.Adapter = borroredBookAdapter;
             return view;
         }

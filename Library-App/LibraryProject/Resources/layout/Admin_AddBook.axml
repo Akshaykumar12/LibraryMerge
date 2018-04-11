@@ -4,68 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff">
-<!--Header: links and small logo-->
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp">
-    <!--Home link-->
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left">
-            <TextView
-                android:id="@+id/linkSearch"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textColor="#031c3d"
-                android:textSize="15dp"
-                android:text="Search"
-                android:paddingLeft="10dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-    <!--End Home link-->
-    <!--Logo-->
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="182dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-            <TextView
-                android:id="@+id/linktest"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textColor="#031c3d"
-                android:textSize="15dp"
-                android:text="add tests"
-                android:paddingLeft="50dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-    <!--End Logo-->
-    <!--Logout link-->
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right">
-            <TextView
-                android:id="@+id/linkLogout"
-                android:layout_height="wrap_content"
-                android:layout_width="wrap_content"
-                android:textColor="#031c3d"
-                android:layout_gravity="right"
-                android:textSize="15dp"
-                android:text="Logout"
-                android:paddingRight="10dp"
-                android:textStyle="italic" />
-        </LinearLayout>
-    <!--End Logout link-->
-    </LinearLayout>
-<!--End Header-->
-<!--Form-->
     <TextView
         android:id="@+id/title"
         android:layout_height="wrap_content"
@@ -81,7 +19,6 @@
         android:id="@+id/isbn"
         android:layout_height="40dp"
         android:layout_width="300dp"
-        android:background="@drawable/EditTextRoundedCorners"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:hint="ISBN"
@@ -92,7 +29,6 @@
         android:id="@+id/bookName"
         android:layout_height="40dp"
         android:layout_width="300dp"
-        android:background="@drawable/EditTextRoundedCorners"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:hint="Book Name"
@@ -103,7 +39,6 @@
         android:id="@+id/author"
         android:layout_height="40dp"
         android:layout_width="300dp"
-        android:background="@drawable/EditTextRoundedCorners"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:hint="Author"
@@ -111,18 +46,17 @@
         android:textColorHint="#686565"
         android:paddingLeft="15dp" />
     <Spinner
-        android:id="@+id/category"
+        android:id="@+id/categorySpinner"
         android:layout_width="300dp"
         android:layout_height="40dp"
-        android:background="@drawable/SearchViewRoundedCorners"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
-        android:paddingLeft="15dp"/>
+        android:background="@android:color/holo_blue_light"
+        android:paddingLeft="15dp" />
     <EditText
         android:id="@+id/numberCopies"
         android:layout_height="40dp"
         android:layout_width="300dp"
-        android:background="@drawable/EditTextRoundedCorners"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:hint="Qty available copies"
@@ -134,9 +68,8 @@
         android:layout_height="40dp"
         android:layout_width="300dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/ButtonRoundedCorners"
+        android:background="#5599cc"
         android:layout_gravity="center"
         android:text="Add Book"
         android:textColor="#ffffff" />
-<!--End Form-->
 </LinearLayout>

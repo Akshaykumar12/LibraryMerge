@@ -32,9 +32,9 @@ namespace LibraryProject.DataMethods
             }
         }
 
-        public static TBUser GetUser(string id, string pwd)
+        public static TBUser GetUser(string email, string pwd)
         {  
-            TBUser user = Realm.GetInstance().All<TBUser>().FirstOrDefault(u =>u.FirstName  == "Anh" && u.Password == "1234" );
+            TBUser user = Realm.GetInstance().All<TBUser>().FirstOrDefault(u =>u.Email == email && u.Password==pwd );
             return user;
 
         }

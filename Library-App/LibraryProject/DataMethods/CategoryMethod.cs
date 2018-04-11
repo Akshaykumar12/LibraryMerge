@@ -42,11 +42,15 @@ namespace LibraryProject.DataMethods
             return Realm.GetInstance().All<TBCategory>().Where(r => r.CategoryId == categoryId).FirstOrDefault();
         }
 
+        public static TBCategory GetCategoryID(string CategoryName)
+        {
+            return Realm.GetInstance().All<TBCategory>().FirstOrDefault(r => r.CategoryName == CategoryName);
+        }
         public static void DeleteAll()
         {
             Realm realm = Realm.GetInstance();
             var categories = realm.All<TBCategory>();
-            using (var transaction = realm.BeginWrite())
+            using (var transaction = realm.BeginWrite()) 
             {
                 foreach (var bb in categories)
                 {
