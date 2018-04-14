@@ -36,7 +36,12 @@ namespace LibraryProject.DataMethods
         {  
             TBUser user = Realm.GetInstance().All<TBUser>().FirstOrDefault(u =>u.Email == email && u.Password==pwd );
             return user;
+        }
 
+        public static TBUser GetUserByName(string name)
+        {
+            TBUser user = Realm.GetInstance().All<TBUser>().FirstOrDefault(u => u.FirstName == name);
+            return user;
         }
 
         public static IQueryable<TBUser> GetAlls()

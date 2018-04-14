@@ -17,31 +17,41 @@ namespace LibraryProject
     [Activity(Label = "RegisterAcitivity")]
     public class RegisterAcitivity : Activity
     {
-        public EditText StudentID, Name, Email, Password, ConfirmPassword, Phone;
+        public EditText FirstName, LastName, Email, Password,Phone;
+        private Button Register;
+        private ImageView Logo;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             // Create your application here
             SetContentView(Resource.Layout.Register);
-            StudentID = FindViewById<EditText>(Resource.Id.etStudentID);
-            Name = FindViewById<EditText>(Resource.Id.etName);
+            FirstName = FindViewById<EditText>(Resource.Id.etFirstName);
+            LastName = FindViewById<EditText>(Resource.Id.etLastName);
             Email = FindViewById<EditText>(Resource.Id.etEmail);
             Password = FindViewById<EditText>(Resource.Id.etPassword);
-            ConfirmPassword = FindViewById<EditText>(Resource.Id.etconfirm_pwd);
             Phone = FindViewById<EditText>(Resource.Id.etPhone);
+            Logo = FindViewById<ImageView>(Resource.Id.logoImage);
+            Register = FindViewById<Button>(Resource.Id.btnRegister);
 
-            TBUser student = new TBUser();
-            student.UserId = StudentID.Text;
-            student.FirstName = Name.Text;
-            student.LastName = Name.Text;
-            student.Password = "axay";
-            student.Email = Email.Text;
-            student.Phone = Phone.Text;
-            student.Admin = false;
+            Register.Click += delegate
+            {
+                TBUser user = new TBUser();
+                user.UserId = Guid.NewGuid().ToString();
+                user.FirstName = FirstName.Text;
+                user.LastName = LastName.Text;
+                user.UserName = "";
+                user.Password = Password.Text;
+                user.Email = Email.Text;
+                user.Phone = Phone.Text;
+                user.Admin = false;
 
-            DataMethods.UserMethod.InsertUpdate(student);
+                UserMethod.InsertUpdate(user);
+                Intent intent = new Intent(this, typeof(LoginActivity));
+                this.StartActivity(intent);
 
+            };
+          
         }
     }
 }

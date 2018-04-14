@@ -2,6 +2,7 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#ffffff"
     android:stretchColumns="1">
     <TableRow>
         <TextView
@@ -11,6 +12,7 @@
             android:gravity="center"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="40dp" />
     </TableRow>
     <TableRow>
@@ -22,12 +24,14 @@
             android:text="Book No"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBorrowedBookNo"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -38,12 +42,14 @@
             android:text="Name"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBorrowedName"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -54,12 +60,14 @@
             android:text="Author"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBorrowedAuthor"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -70,12 +78,14 @@
             android:text="Type"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBorrowedType"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -86,12 +96,14 @@
             android:text="Return Date"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBorrowedReturnDate"
             android:layout_marginRight="40dp" />
     </TableRow>

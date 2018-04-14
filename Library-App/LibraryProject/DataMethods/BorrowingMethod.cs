@@ -38,6 +38,7 @@ namespace LibraryProject.DataMethods
             return Realm.GetInstance().All<TBBorrowing>();
         }
 
+      
         public static TBBorrowing GetBorrowingBook(string borrowingId)
         {
             return Realm.GetInstance().All<TBBorrowing>().Where(r => r.BorrowingId == borrowingId).FirstOrDefault();
@@ -48,6 +49,10 @@ namespace LibraryProject.DataMethods
             return Realm.GetInstance().All<TBBorrowing>().Where(r => r.UserId == userId && r.BookId == bookId).FirstOrDefault();
         }
 
+        public static IQueryable<TBBorrowing> GetBorrowingBookByUser(string userId)
+        {
+            return Realm.GetInstance().All<TBBorrowing>().Where(r => r.UserId == userId);
+        }
         public static void Delete(TBBorrowing borrowing)
         {
             Realm realm = Realm.GetInstance();

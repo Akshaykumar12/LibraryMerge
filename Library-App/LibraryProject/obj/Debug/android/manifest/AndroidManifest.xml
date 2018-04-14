@@ -7,7 +7,6 @@
   <application android:allowBackup="true" android:label="@string/app_name" android:name="android.app.Application" android:debuggable="true">
     <activity android:label="AdminBookDetailActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.AdminBookDetailActivity" />
     <activity android:label="AdminHomeActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.AdminHomeActivity" />
-    <activity android:label="Admin_AddBookActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.Admin_AddBookActivity" />
     <activity android:label="Admin_BookSearchActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.Admin_BookSearchActivity" />
     <activity android:label="BookDetailActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.BookDetailActivity" />
     <activity android:label="BorrowedBookActivity" android:name="md5efe10b4c95b20ad12781e35cad0c4ad4.BorrowedBookActivity" />

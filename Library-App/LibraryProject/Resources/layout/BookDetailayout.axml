@@ -2,33 +2,36 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="#ffffff"
     android:stretchColumns="1">
     <TableRow>
         <TextView
             android:layout_column="1"
-            android:text="Detail"
+            android:text="Book Detail"
             android:padding="3dip"
             android:gravity="center"
             android:textSize="20dp"
+            android:textColor="#333131"
+            android:textStyle="bold"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="40dp" />
-    </TableRow>
-    <TableRow>
     </TableRow>
     <TableRow
         android:layout_marginBottom="10dp">
         <TextView
             android:layout_column="1"
-            android:text="Book No"
+            android:text="ISBN"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
-            android:id="@+id/txtBookNo"
+            android:textColor="#333131"
+            android:id="@+id/txtISBN"
             android:layout_marginRight="40dp" />
     </TableRow>
     <TableRow
@@ -38,12 +41,14 @@
             android:text="Name"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtBookName"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -54,12 +59,14 @@
             android:text="Author"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtAuthor"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -70,12 +77,14 @@
             android:text="Quantity"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
+            android:textColor="#333131"
             android:id="@+id/txtQuantity"
             android:layout_marginRight="40dp" />
     </TableRow>
@@ -86,13 +95,15 @@
             android:text="Type"
             android:padding="3dip"
             android:textSize="20dp"
+            android:textColor="#333131"
             android:layout_marginLeft="20dp" />
         <TextView
             android:text="Value"
             android:gravity="right"
             android:textSize="20dp"
             android:padding="3dip"
-            android:id="@+id/txtBookType"
+            android:textColor="#333131"
+            android:id="@+id/txtCategory"
             android:layout_marginRight="40dp" />
     </TableRow>
     <TableRow
@@ -104,6 +115,7 @@
             android:padding="3dip"
             android:gravity="center"
             android:textSize="20dp"
+            android:background="#4fa858"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="40dp" />
     </TableRow>

@@ -26,12 +26,7 @@ namespace LibraryProject
 
             //enable navigation mode to support tab layout
             this.ActionBar.NavigationMode = ActionBarNavigationMode.Tabs;
-            IQueryable<TBBook> books1 = BookMethod.GetAlls();
-            List<TBBook> data_books1 = new List<TBBook>();
-            foreach (var book in books1)
-            {
-                data_books1.Add(book);
-            }
+          
 
             /* categories */
             List<String> Categories = new List<string>();
@@ -42,11 +37,14 @@ namespace LibraryProject
             }
           
 
-            //adding audio tab
-            AddTab("Search Book", new SearchBookFragment(this, data_books1));
+            //adding search tab
+            AddTab("Search Book", new AdminSearchBookFragment(this));
 
-            //adding video tab 
+            //adding AddBook tab 
             AddTab("Add Book", new AddBookFragment(this, Categories));
+
+            //adding Logout tab 
+            AddTab("Logout", new LogoutFragment(this));
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.home);
         }

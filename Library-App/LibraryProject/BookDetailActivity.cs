@@ -19,7 +19,7 @@ namespace LibraryProject
     public class BookDetailActivity : Activity
     {
         
-        TextView BookNo, BookName, Author, BookType, Quantity;
+        TextView ISBN, BookName, Author,Category,Quantity;
         private TBBook book;
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,30 +28,30 @@ namespace LibraryProject
             // Create your application here
             string bookName = Intent.GetStringExtra("ID");
 
-            BookNo = FindViewById<TextView>(Resource.Id.txtBookTitle);
+            ISBN = FindViewById<TextView>(Resource.Id.txtISBN);
             BookName = FindViewById<TextView>(Resource.Id.txtBookName);
             Author = FindViewById<TextView>(Resource.Id.txtAuthor);
-            BookType = FindViewById<TextView>(Resource.Id.txtBookType);
+            Category = FindViewById<TextView>(Resource.Id.txtCategory);
             Quantity = FindViewById<TextView>(Resource.Id.txtQuantity);
             Button btnBorrow = FindViewById<Button>(Resource.Id.btnBorrow);
 
             book = BookMethod.GetBookByName(bookName);
             if (book != null)
             {
-                Author.Text = book.EditionNumber.ToString();
-                BookName.Text = book.ISBN;
-                //_txtQuantity.Text = book.Quantity.ToString();
-                //TBAuthor author = AuthorMethod.GetAuthor(book.AuthorId);
-                //if (author != null)
-                //{
-                //    _txtAuthor.Text = author.FirstName + " " + author.LastName;
-                //}
+                ISBN.Text = book.ISBN.ToString();
+                BookName.Text = book.BookName.ToString();
+                Quantity.Text = book.Quantity.ToString();
+                TBAuthor author = AuthorMethod.GetAuthor(book.AuthorId);
+                if (author != null)
+                {
+                    Author.Text = author.FirstName + " " + author.LastName;
+                }
 
-                //TBCategory category = CategoryMethod.GetCategory(book.CategoryId);
-                //if (author != null)
-                //{
-                //    _txtBookType.Text = category.CategoryName;
-                //}
+                TBCategory category = CategoryMethod.GetCategory(book.CategoryId);
+                if (category != null)
+                {
+                    Category.Text = category.CategoryName;
+                }
 
                 btnBorrow.Click += OnBtnBorrowClick;
             }
@@ -59,12 +59,56 @@ namespace LibraryProject
 
         private void OnBtnBorrowClick(object sender, EventArgs e)
         {
-            TBBorrowing borrowBook = new TBBorrowing();
-            borrowBook.BookId = book.BookId;
-            borrowBook.UserId = "1";
-            borrowBook.BorrowDate = DateTime.Today;
-            borrowBook.ReturnDate = DateTime.Today.AddDays(3);
-            BorrowingMethod.InsertUpdate(borrowBook);
+            GlobalVariable temp = GlobalVariable.GetInstance();
+            var user = UserMethod.GetUserByName(temp.UserName);
+            IQueryable<TBBorrowing> borrowBookByUser = BorrowingMethod.GetBorrowingBookByUser(user.UserId);
+            int borrowedcount = borrowBookByUser.Count();
+
+            Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+            Android.App.AlertDialog alert = dialog.Create();
+            if (borrowedcount<5)
+            {
+
+                if (book.Quantity > 0)
+                {
+
+                    
+                    TBBorrowing borrowBook = new TBBorrowing();
+                    borrowBook.BorrowingId = Guid.NewGuid().ToString();
+                    borrowBook.BorrowDate = new DateTimeOffset(DateTime.Today);
+                    borrowBook.ReturnDate = new DateTimeOffset(DateTime.Today.AddDays(5));
+                    borrowBook.BookId = book.BookId;
+                    borrowBook.UserId = user.UserId;
+                    //book.Quantity = book.Quantity - 1;
+                    //BookMethod.InsertUpdate(book);
+                    BorrowingMethod.InsertUpdate(borrowBook);
+                }
+                else
+                {
+                    //book not Available
+                  
+                    alert.SetTitle("Book Not Available");
+                    alert.SetMessage("Sorry!! Copy of this book is not available at this moment. Come Later");
+                    alert.SetButton("OK", (c, ev) =>
+                    {
+
+                    });
+
+                    alert.Show();
+                }
+            }
+            else
+            {
+                //Over Limit
+                alert.SetTitle("Over Limit");
+                alert.SetMessage("You can only borrow maximum 5 book at a time. Thank you.");
+                alert.SetButton("OK", (c, ev) =>
+                {
+
+                });
+
+                alert.Show();
+            }
         }
     }
 }

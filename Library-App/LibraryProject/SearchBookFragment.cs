@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using LibraryProject.DataMethods;
 using LibraryProject.Models;
 
 namespace LibraryProject
@@ -20,11 +21,11 @@ namespace LibraryProject
         private ArrayAdapter myAdapter;
         private Activity source;
         private List<TBBook> data_books;
-        public SearchBookFragment(Activity home,List<TBBook> books)
+        private SearchView searchView;
+        private SearchBookAdapter searchBookAdapter;
+        public SearchBookFragment(Activity home)
         {
             this.source = home;
-            this.data_books = books;
-            
         }
 
         public override void OnCreate(Bundle savedInstanceState)
@@ -35,23 +36,39 @@ namespace LibraryProject
 
         }
 
+        
+
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             // Use this to return your custom view for this Fragment
-            // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
-
-           // return base.OnCreateView(inflater, container, savedInstanceState);
             GlobalVariable temp = GlobalVariable.GetInstance();
             var view = inflater.Inflate(Resource.Layout.BorrowedBook, container, false);
-            view.FindViewById<TextView>(Resource.Id.textView2).Text = "Welcome"+temp.UserName+"!! Search Books";
+            view.FindViewById<TextView>(Resource.Id.textView2).Text = "Welcome "+temp.UserName+" !!";
+
 
             lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
-            // myAdapter = new ArrayAdapter(main1, Android.Resource.Layout.SimpleListItem1, data_books.Select(b=>b.BookName).ToArray());
-            //lv1.Adapter = myAdapter;
-            var adminSearchBookAdapter = new Admin_SearchBookAdapter(source, data_books.ToArray());
-            lv1.Adapter = adminSearchBookAdapter;
+
+            IQueryable<TBBook> books1 = BookMethod.GetAlls();
+            data_books = new List<TBBook>();
+            foreach (var book in books1)
+            {
+                data_books.Add(book);
+            }
+            searchView = view.FindViewById<SearchView>(Resource.Id.searchBorrowedBook);
+            searchView.QueryTextChange += SearchView_QueryTextChange;
+
+            searchBookAdapter = new SearchBookAdapter(source, data_books.ToArray());
+            lv1.Adapter = searchBookAdapter;
             return view;
 
+        }
+
+        private void SearchView_QueryTextChange(object sender, SearchView.QueryTextChangeEventArgs e)
+        {
+            List<TBBook> filter_data_books = data_books.FindAll(book => book.BookName.ToLower().Contains(e.NewText.ToLower()));
+            searchBookAdapter.Clear();
+            searchBookAdapter.AddAll(filter_data_books);
+            searchBookAdapter.NotifyDataSetChanged();
         }
     }
 }

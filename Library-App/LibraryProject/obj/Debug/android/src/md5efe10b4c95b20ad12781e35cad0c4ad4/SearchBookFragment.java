@@ -24,6 +24,13 @@ public class SearchBookFragment
 			mono.android.TypeManager.Activate ("LibraryProject.SearchBookFragment, LibraryProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
+	public SearchBookFragment (android.app.Activity p0)
+	{
+		super ();
+		if (getClass () == SearchBookFragment.class)
+			mono.android.TypeManager.Activate ("LibraryProject.SearchBookFragment, LibraryProject, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "Android.App.Activity, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065", this, new java.lang.Object[] { p0 });
+	}
+
 
 	public void onCreate (android.os.Bundle p0)
 	{

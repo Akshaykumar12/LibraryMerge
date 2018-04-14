@@ -16,6 +16,8 @@ namespace LibraryProject
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            //Common.DataServices.MakeData();
+
              StartActivity(typeof(LoginActivity));
 
         }

@@ -56,23 +56,36 @@ namespace LibraryProject
 
             arrayAdapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             categorySpinner.Adapter = arrayAdapter;
-            //btnaddBook.Click += AddBook;
+            btnaddBook.Click += AddBook;
             
             return view;
         }
         //Its not working
-        //private void AddBook(object sender, EventArgs e)
-        //{
-        //    string category = categorySpinner.SelectedItem.ToString();
-        //    TBCategory categoryObj = CategoryMethod.GetCategoryID(category);
-        //    TBBook book = new TBBook();
-        //    book.BookName = BookName.Text;
-        //    book.ISBN = ISBN.Text;
-        //    book.AuthorId = "1";
-        //    book.CategoryId = categoryObj.CategoryId;
-        //    book.Quantity = Int32.Parse(Quantity.Text);
-        //    BookMethod.InsertUpdate(book);
-            
-        //}
+        private void AddBook(object sender, EventArgs e)
+        {
+            /* insert into the author table */
+            TBAuthor author = new TBAuthor();
+            author.AuthorId = Guid.NewGuid().ToString();
+            author.FirstName = Author.Text;
+            author.LastName = "";
+            AuthorMethod.InsertUpdate(author);
+
+            string category = categorySpinner.SelectedItem.ToString();
+            TBCategory categoryObj = CategoryMethod.GetCategoryID(category);
+            TBBook book = new TBBook();
+            book.BookName = BookName.Text;
+            book.ISBN = ISBN.Text;
+            book.AuthorId = author.AuthorId;
+            book.CategoryId = categoryObj.CategoryId;
+            book.Quantity = Int32.Parse(Quantity.Text);
+            BookMethod.InsertUpdate(book);
+
+            ISBN.Text = "";
+            BookName.Text = "";
+            Author.Text = "";
+            Quantity.Text = "";
+
+
+        }
     }
 }

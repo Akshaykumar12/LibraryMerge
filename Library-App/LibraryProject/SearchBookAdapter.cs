@@ -73,5 +73,14 @@ namespace LibraryProject
         {
             get { return books[position].BookId.ToString(); }
         }
+        internal void Clear()
+        {
+            this.books = new TBBook[] { };
+        }
+
+        public void AddAll(List<TBBook> dataBooks)
+        {
+            this.books = dataBooks.ToArray();
+        }
     }
 }

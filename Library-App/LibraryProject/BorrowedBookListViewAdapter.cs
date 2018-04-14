@@ -71,5 +71,15 @@ namespace LibraryProject
             borrowedBookDetailActivity.PutExtra("BookName", (string)btn.Tag);
             this.context.StartActivity(borrowedBookDetailActivity);
         }
+
+        internal void Clear()
+        {
+            this.datas = new string[] { };
+        }
+
+        public void AddAll(List<string> dataBooks)
+        {
+            this.datas = dataBooks.ToArray();
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace LibraryProject.DataMethods
             }
         }
 
+
         public static IQueryable<TBBook> GetAlls()
         {
             return Realm.GetInstance().All<TBBook>();

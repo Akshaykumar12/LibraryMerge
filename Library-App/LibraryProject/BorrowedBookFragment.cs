@@ -10,6 +10,8 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
+using LibraryProject.DataMethods;
+using LibraryProject.Models;
 
 namespace LibraryProject
 {
@@ -18,13 +20,12 @@ namespace LibraryProject
         private List<String> borrowdbooks;
         private ListView lv1;
         private ArrayAdapter myAdapter;
-        private Activity main1;
+        private Activity Source;
       
 
-        public BorrowedBookFragment(Activity main, List<String> borrowdbooks)
-        {
-            this.borrowdbooks = borrowdbooks;
-            this.main1 = main;
+        public BorrowedBookFragment(Activity source)
+        {  
+            this.Source = source;
         }
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -39,11 +40,28 @@ namespace LibraryProject
             // return inflater.Inflate(Resource.Layout.YourFragment, container, false);
 
             //return base.OnCreateView(inflater, container, savedInstanceState);
-            var view = inflater.Inflate(Resource.Layout.BorrowedBook, container, false);
+            var view = inflater.Inflate(Resource.Layout.borrowedbooks, container, false);
 
             lv1 = view.FindViewById<ListView>(Resource.Id.listViewBorrowedBook);
 
-            var borroredBookAdapter = new BorrowedBookListViewAdapter(main1, borrowdbooks.ToArray());
+            GlobalVariable temp = GlobalVariable.GetInstance();
+            var user = UserMethod.GetUserByName(temp.UserName);
+            IQueryable<TBBorrowing> borrowings = BorrowingMethod.GetBorrowingBookByUser(user.UserId);
+            IQueryable<TBBook> books = BookMethod.GetAlls();
+            borrowdbooks = new List<string>();
+            foreach (var borrowing in borrowings)
+            {
+                foreach (var book in books)
+                {
+                    if (borrowing.BookId == book.BookId)
+                    {
+                        borrowdbooks.Add(book.BookName);
+                        break;
+                    }
+                }
+            }
+
+            var borroredBookAdapter = new BorrowedBookListViewAdapter(Source, borrowdbooks.ToArray());
             lv1.Adapter = borroredBookAdapter;
             return view;
         }

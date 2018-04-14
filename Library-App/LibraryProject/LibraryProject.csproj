@@ -84,7 +84,7 @@
     <Compile Include="AddBookFragment.cs" />
     <Compile Include="AdminBookDetailActivity.cs" />
     <Compile Include="AdminHomeActivity.cs" />
-    <Compile Include="Admin_AddBookActivity.cs" />
+    <Compile Include="AdminSearchBookFragment.cs" />
     <Compile Include="Admin_BookSearchActivity.cs" />
     <Compile Include="Admin_SearchBookAdapter.cs" />
     <Compile Include="BookDetailActivity.cs" />
@@ -102,6 +102,7 @@
     <Compile Include="GlobalVariable.cs" />
     <Compile Include="HomeActivity.cs" />
     <Compile Include="LoginActivity.cs" />
+    <Compile Include="LogoutFragment.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Models\TBAuthor.cs" />
     <Compile Include="Models\TBBook.cs" />
@@ -125,8 +126,14 @@
     <AndroidResource Include="Resources\layout\Admin_BookDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\borrowedbooks.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <None Include="GettingStarted.Xamarin" />
     <AndroidResource Include="Resources\layout\home.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\layout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <None Include="packages.config" />
@@ -142,13 +149,13 @@
     <AndroidResource Include="Resources\layout\BorrowedBookDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\SearchBookFragment.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Register.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\login.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\logout.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -159,7 +166,6 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\drawable\" />
     <Folder Include="Resources\mipmap-hdpi\" />
     <Folder Include="Resources\mipmap-mdpi\" />
     <Folder Include="Resources\mipmap-xhdpi\" />
@@ -168,6 +174,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="FodyWeavers.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Registration.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Fody.2.2.0\build\netstandard1.2\Fody.targets" Condition="Exists('..\packages\Fody.2.2.0\build\netstandard1.2\Fody.targets')" />

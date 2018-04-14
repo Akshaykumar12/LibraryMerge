@@ -18,6 +18,8 @@ namespace LibraryProject
     {
         private EditText StudetID, Password;
         private Button Login;
+        private ImageView Logo;
+        private TextView Register;
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -27,8 +29,8 @@ namespace LibraryProject
             StudetID = FindViewById<EditText>(Resource.Id.etLoginStudentID);
             Password = FindViewById<EditText>(Resource.Id.etLoginPassword);
             Login = FindViewById<Button>(Resource.Id.btnLogin);
-
-
+            Logo = FindViewById<ImageView>(Resource.Id.logoImage);
+            Register = FindViewById<TextView>(Resource.Id.txtRegister);
             Login.Click += delegate
             {
                 string id = StudetID.Text;
@@ -51,7 +53,26 @@ namespace LibraryProject
                         this.StartActivity(intent);
                     }
                 }
+                else
+                {
+                    Android.App.AlertDialog.Builder dialog = new Android.App.AlertDialog.Builder(this);
+                    Android.App.AlertDialog alert = dialog.Create();
+                    alert.SetTitle("Authentication Failed");
+                    alert.SetMessage("Invalid Email or Password !! Please, Try Again.");
+                    alert.SetButton("OK", (c, ev) =>
+                    {
 
+                    });
+
+                    alert.Show();
+                }
+
+            };
+
+            Register.Click += delegate
+            {
+                Intent intent = new Intent(this, typeof(RegisterAcitivity));
+                this.StartActivity(intent);
             };
 
 
