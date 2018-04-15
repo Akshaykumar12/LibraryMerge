@@ -1,110 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="#ffffff"
-    android:stretchColumns="1">
-    <TableRow>
-        <TextView
-            android:layout_column="1"
-            android:text="Detail"
-            android:padding="3dip"
-            android:gravity="center"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="40dp" />
-    </TableRow>
-    <TableRow>
-    </TableRow>
-    <TableRow
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_column="1"
-            android:text="Book No"
-            android:padding="3dip"
-            android:textSize="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="20dp" />
-        <TextView
-            android:text="Value"
-            android:gravity="right"
-            android:textSize="20dp"
-            android:padding="3dip"
-            android:textColor="#333131"
-            android:id="@+id/txtBorrowedBookNo"
-            android:layout_marginRight="40dp" />
-    </TableRow>
-    <TableRow
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_column="1"
-            android:text="Name"
-            android:padding="3dip"
-            android:textSize="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="20dp" />
-        <TextView
-            android:text="Value"
-            android:gravity="right"
-            android:textSize="20dp"
-            android:padding="3dip"
-            android:textColor="#333131"
-            android:id="@+id/txtBorrowedName"
-            android:layout_marginRight="40dp" />
-    </TableRow>
-    <TableRow
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_column="1"
-            android:text="Author"
-            android:padding="3dip"
-            android:textSize="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="20dp" />
-        <TextView
-            android:text="Value"
-            android:gravity="right"
-            android:textSize="20dp"
-            android:padding="3dip"
-            android:textColor="#333131"
-            android:id="@+id/txtBorrowedAuthor"
-            android:layout_marginRight="40dp" />
-    </TableRow>
-    <TableRow
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_column="1"
-            android:text="Type"
-            android:padding="3dip"
-            android:textSize="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="20dp" />
-        <TextView
-            android:text="Value"
-            android:gravity="right"
-            android:textSize="20dp"
-            android:padding="3dip"
-            android:textColor="#333131"
-            android:id="@+id/txtBorrowedType"
-            android:layout_marginRight="40dp" />
-    </TableRow>
-    <TableRow
-        android:layout_marginBottom="10dp">
-        <TextView
-            android:layout_column="1"
-            android:text="Return Date"
-            android:padding="3dip"
-            android:textSize="20dp"
-            android:textColor="#333131"
-            android:layout_marginLeft="20dp" />
-        <TextView
-            android:text="Value"
-            android:gravity="right"
-            android:textSize="20dp"
-            android:padding="3dip"
-            android:textColor="#333131"
-            android:id="@+id/txtBorrowedReturnDate"
-            android:layout_marginRight="40dp" />
-    </TableRow>
-</TableLayout>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout1">
+            <TextView
+                android:text="Borrowed Book Detail"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#333131"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/textView1"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:text="Book No."
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:id="@+id/textView2"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Value"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBorrowedBookNo"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:id="@+id/textView3"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Value"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBorrowedName"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4">
+            <TextView
+                android:text="Author"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:id="@+id/textView4"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Value"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBorrowedAuthor"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:id="@+id/textView5"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Value"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBorrowedCategory"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout6"
+            android:minWidth="25px"
+            android:minHeight="25px">
+            <TextView
+                android:text="Return Date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:id="@+id/textView6"
+                android:layout_margin="10dp" />
+            <TextView
+                android:text="Value"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textColor="#333131"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBorrowedReturnDate"
+                android:layout_margin="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

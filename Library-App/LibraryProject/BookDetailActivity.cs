@@ -24,7 +24,7 @@ namespace LibraryProject
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.BookDetailayout);
+            SetContentView(Resource.Layout.BookDetail);
             // Create your application here
             string bookName = Intent.GetStringExtra("ID");
 
@@ -79,9 +79,21 @@ namespace LibraryProject
                     borrowBook.ReturnDate = new DateTimeOffset(DateTime.Today.AddDays(5));
                     borrowBook.BookId = book.BookId;
                     borrowBook.UserId = user.UserId;
-                    //book.Quantity = book.Quantity - 1;
-                    //BookMethod.InsertUpdate(book);
+
+                    BookMethod.Substract(book, 1);
                     BorrowingMethod.InsertUpdate(borrowBook);
+                    alert.SetTitle("You have Borrowed book"+book.BookName);
+                    alert.SetMessage("You need to return book in 5 days");
+                    alert.SetButton("OK", (c, ev) =>
+                    {
+
+                    });
+
+                    alert.Show();
+                    Intent intent = new Intent(this, typeof(HomeActivity));
+                    this.StartActivity(intent);
+
+
                 }
                 else
                 {

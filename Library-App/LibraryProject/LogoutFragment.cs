@@ -34,10 +34,11 @@ namespace LibraryProject
            
             var view = inflater.Inflate(Resource.Layout.logout, container, false);
             Logout = view.FindViewById<Button>(Resource.Id.btnLogout);
-            GlobalVariable temp = GlobalVariable.GetInstance();
-            temp.UserName = "";
+         
             Logout.Click += delegate
             {
+                GlobalVariable temp = GlobalVariable.GetInstance();
+                temp.UserName = "";
                 Intent intent = new Intent(Source, typeof(LoginActivity));
                 this.StartActivity(intent);
             };

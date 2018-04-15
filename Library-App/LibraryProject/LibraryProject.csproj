@@ -117,9 +117,6 @@
     <Compile Include="SearchBookFragment.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\BookDetailayout.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\Admin_AddBook.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -129,11 +126,11 @@
     <AndroidResource Include="Resources\layout\borrowedbooks.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <None Include="GettingStarted.Xamarin" />
-    <AndroidResource Include="Resources\layout\home.axml">
+    <AndroidResource Include="Resources\layout\BookDetail.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\layout.axml">
+    <None Include="GettingStarted.Xamarin" />
+    <AndroidResource Include="Resources\layout\home.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <None Include="packages.config" />

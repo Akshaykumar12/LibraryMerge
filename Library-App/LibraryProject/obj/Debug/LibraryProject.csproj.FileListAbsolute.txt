@@ -149,7 +149,6 @@ C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\De
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\LibraryProject.dll
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\LibraryProject.pdb
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\android\bin\LibraryProject.LibraryProject.apk
-C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\bookdetailayout.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\home.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbook.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbooklistview.xml
@@ -164,11 +163,12 @@ C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\De
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\admin_bookdetail.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\drawable\logo.jpg
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\drawable\registration.jpg
-C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\layout.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\logout.xml
+C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbooks.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\bin\Debug\LibraryProject.dll.mdb
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\android\assets\LibraryProject.dll.mdb
-C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\borrowedbooks.xml
+C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\LibraryProject.csprojResolveAssemblyReference.cache
+C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\obj\Debug\res\layout\bookdetail.xml
 C:\Users\Surface\Documents\GitHub\LibraryMerge\Library-App\LibraryProject\bin\Debug\LibraryProject.dll
 bin\Debug\Microsoft.CSharp.pdb
 bin\Debug\Mono.Android.pdb

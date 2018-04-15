@@ -32,6 +32,20 @@ namespace LibraryProject.DataMethods
             }
         }
 
+        public static void Substract(TBBook book, int n)
+        {
+            Realm realm = Realm.GetInstance();
+            TBBook tempBook = realm.All<TBBook>().Where(r => r.BookId == book.BookId).FirstOrDefault();
+            using (var transaction = realm.BeginWrite())
+            {
+                if (tempBook != null)
+                {
+                    tempBook.Quantity -= 1;
+                    transaction.Commit();
+                }
+            }
+        }
+
 
         public static IQueryable<TBBook> GetAlls()
         {

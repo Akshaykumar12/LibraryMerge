@@ -29,7 +29,7 @@ namespace LibraryProject
             TextView _txtBorrowedBookNo = FindViewById<TextView>(Resource.Id.txtBorrowedBookNo);
             TextView _txtBorrowedName = FindViewById<TextView>(Resource.Id.txtBorrowedName);
             TextView _txtBorrowedAuthor = FindViewById<TextView>(Resource.Id.txtBorrowedAuthor);
-            TextView _txtBorrowedType = FindViewById<TextView>(Resource.Id.txtBorrowedType);
+            TextView _txtBorrowedType = FindViewById<TextView>(Resource.Id.txtBorrowedCategory);
             TextView _txtBorrowedReturnDate = FindViewById<TextView>(Resource.Id.txtBorrowedReturnDate);
 
             TBBook book = BookMethod.GetBookByName(bookName);
