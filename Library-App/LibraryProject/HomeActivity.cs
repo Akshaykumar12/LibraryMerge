@@ -36,6 +36,14 @@ namespace LibraryProject
             AddTab("Logout", new LogoutFragment(this));
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.home);
+
+
+            var editToolbar = FindViewById<Toolbar>(Resource.Id.toolbar1);
+            editToolbar.Title = "Toolbar";
+            editToolbar.InflateMenu(Resource.Menu.edit_menus);
+            editToolbar.MenuItemClick += (sender, e) => {
+                Toast.MakeText(this, "Logout button clicking: " + e.Item.TitleFormatted, ToastLength.Short).Show();
+            };
         }
 
         void AddTab(string tabText, Fragment fragment)
